@@ -1,0 +1,155 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#app {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#userDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#userDetails .left-container{
+  width:30%;
+}
+#userDetails .right-container {
+  width: 70%;
+}
+
+#userAvatar {
+  width: 70%; 
+  border-radius: 50%; 
+}
+
+#userDetails .right-container {
+  margin-left: 10px;
+  padding-left: 10px; 
+}
+
+
+
+
+#userLink {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+#userName {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#userLocation {
+  color: #777;
+}
+
+#repositoryList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.repository-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.repo-container {
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 45%;
+  margin-right: 4%;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 1%;
+}
+
+.repo-container:nth-child(odd) {
+  order: 1;
+}
+
+.repo-container:nth-child(even) {
+  order: 2;
+}
+
+.repo-name {
+  color: #3e84d4;
+  font-size: 25px;
+}
+
+.tech-item {
+  display: inline-block;
+  background-color: #3e84d4;
+  color: white;
+  padding: 5px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+
+
+.pagination {
+  margin-top: 20px;
+}
+
+#currentPage {
+  margin: 0 10px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #0366d6;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #004b8c;
+}
+
+.errorMessage {
+  color: #ff0000;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+  display: block;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 600px) {
+  #userDetails {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #userAvatar {
+    margin-bottom: 10px;
+  }
+
+ 
+}
